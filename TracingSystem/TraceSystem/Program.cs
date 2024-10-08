@@ -1,6 +1,7 @@
 ﻿//- Here we have the IO API for the Tracing database. 
 
 using MsgC;
+using TraceSystem.Controllers;
 using TraceSystem.Models;
 
 
@@ -33,7 +34,12 @@ void InsertTrace(){
   }
 
 
-  //- Do what ever :)
+  //- Read the Stream. 
+  //- Unpack the Stream.
+
+
+  using TraceController tc = new TraceController();
+  tc.InsertTrace(model);
 }
 
 void InsertTraceCall(){

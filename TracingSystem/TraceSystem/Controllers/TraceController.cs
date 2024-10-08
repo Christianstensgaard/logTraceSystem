@@ -4,10 +4,10 @@ using TraceSystem.Models;
 using TraceSystem.Controllers;
 
 namespace TraceSystem.Controllers;
-public class TraceController{
+public class TraceController : IDisposable{
 
-    public TraceController(DatabaseConnection connection){
-        db = connection;
+    public TraceController(){
+        db = new DatabaseConnection();
     }
 
     DatabaseConnection db;
@@ -46,5 +46,10 @@ public class TraceController{
                 command.ExecuteNonQuery();
             }
         }
+    }
+
+    public void Dispose()
+    {
+        db.GetConnection().Close();
     }
 }
