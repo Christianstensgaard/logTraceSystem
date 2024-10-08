@@ -84,16 +84,7 @@ public class Msg_Engine{
 
 
     socket.GetStream();
-
     //- Pack the Data into a package. 
-
-
-
-
-
-
-
-
   }
   internal void WriteLog(IMsg caller){
     

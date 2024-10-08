@@ -26,7 +26,6 @@ services:
     depends_on:
       - message_server
 
-
   tracing_service:
     build:
       context: ./TracingSystem/TraceSystem
