@@ -1,0 +1,7 @@
+C:\git\logTraceSystem\MessageSystem\MessageServer\out\MessageServer.exe
+C:\git\logTraceSystem\MessageSystem\MessageServer\out\MessageServer.dll
+C:\git\logTraceSystem\MessageSystem\MessageServer\out\MessageServer.deps.json
+C:\git\logTraceSystem\MessageSystem\MessageServer\out\MessageServer.runtimeconfig.json
+C:\git\logTraceSystem\MessageSystem\MessageServer\out\MessageServer.pdb
+C:\git\logTraceSystem\MessageSystem\MessageServer\out\MsgC.dll
+C:\git\logTraceSystem\MessageSystem\MessageServer\out\MsgC.pdb

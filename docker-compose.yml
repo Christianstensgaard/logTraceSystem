@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  message_server:
+    build:
+      context: ./MessageSystem/MessageServer
+      dockerfile: Dockerfile
+    ports:
+      - "20200:20200"
+
+  tracing_database:
+    build:
+      context: ./TracingSystem
+      dockerfile: Dockerfile
+    ports:
+      - "3306:3306"
+    depends_on:
+      - message_server
+
+  logging_database:
+    build:
+      context: ./LoggingSystem
+      dockerfile: Dockerfile
+    ports:
+      - "3307:3306"
+    depends_on:
+      - message_server
+
+
+  tracing_service:
+    build:
+      context: ./TracingSystem/TraceSystem
+      dockerfile: Dockerfile
+    deploy:
+      replicas: 2
+    depends_on:
+      - message_server

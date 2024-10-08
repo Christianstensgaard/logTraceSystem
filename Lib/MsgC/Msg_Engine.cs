@@ -9,79 +9,139 @@ public class Msg_Engine{
     newSubscribers  = new List<IMsg>();
     msgsSubs        = new List<IMsg>();
     thread          = new Thread(BackgroundWorker);
+    Start();
   }
 
   public void Start(){
-    try
-    {
-      socket.Connect("127.0.0.1", 20200);
+    int maxRetries = 5;
+    int delay = 2000;
 
-      if(socket.Connected)
-        thread.Start();
-    }
-    catch (System.Exception)
+    for (int i = 0; i < maxRetries; i++)
     {
-      System.Console.WriteLine("Failed to Start the server!");
-      return;
+        try
+        {
+            socket.Connect("message_server", 20200);
+            if(socket.Connected)
+            {
+                thread.Start();
+                return; // Exit the method once connected
+            }
+        }
+        catch (System.Exception)
+        {
+            System.Console.WriteLine($"Connection attempt {i + 1} failed. Retrying...");
+            System.Threading.Thread.Sleep(delay); // Wait before retrying
+        }
     }
+    System.Console.WriteLine("Failed to Start the server after multiple attempts!");
+}
+
+  public void SetTraceConnection(string traceSlaveId){
+    logTraceInfoconnectionInformation ??= new LogTraceMsgConnectionInformation();
+    logTraceInfoconnectionInformation.TraceFunctionName = traceSlaveId;
   }
+  public void SetLoggingConnection(string LogSlaveId){
+    logTraceInfoconnectionInformation ??= new LogTraceMsgConnectionInformation();
+    logTraceInfoconnectionInformation.LoggingFunctionName = LogSlaveId;
+  }
+
+
+  class LogTraceMsgConnectionInformation{
+    public string? TraceFunctionName { get; set; } = null;
+    public string? LoggingFunctionName { get; set; } = null;
+  }
+  LogTraceMsgConnectionInformation? logTraceInfoconnectionInformation = null;
+
+
+  public bool EnableTracing { get; set; } = false;
+  public bool EnableLogging { get; set; } = false;
+
   public void Add(IMsg msg){
+    //Subscribing to the Server.
     if(!socket.Connected)
       return;
 
-    ushort type = msg.Type;
-    ushort functionID = 0;
-    string functionName = msg.FunctionName;
 
-    byte[] initBuffer = new byte[1 + functionName.Length];
-    initBuffer[0] = (byte) msg.Type;
-    Array.Copy(Encoding.ASCII.GetBytes(functionName), 0, initBuffer, 1, functionName.Length);
-    socket.GetStream().Write(initBuffer);
+    //- Subscribe to the client.
+    byte[]? stream = Convert(ConvertToFixedArray(msg.FunctionName));
+    
 
-    int size = socket.GetStream().Read(initBuffer);
-    if(size > 0){
-      // handling response from server
-      functionID = initBuffer[0];
-    }
-
-    msg.FunctionId = functionID;
+    if(stream == null)
+      return;
+    socket.GetStream().Write(stream);
     msgsSubs.Add(msg);
   }
   public void Remove(IMsg msg){
     msgsSubs.Remove(msg);
   }
-  internal void Write(){
+  internal void Write(IMsg callerInformation){
+    System.Console.WriteLine("Writing To MessageServer");
+
+    logTraceInformation ??= new LogTrace();
+    logTraceInformation.TraceID = null;
+    logTraceInformation.FunctionName = callerInformation.FunctionName;
+
+
+
+    socket.GetStream();
+
+    //- Pack the Data into a package. 
+
+
+
+
+
+
+
+
+  }
+  internal void WriteLog(IMsg caller){
+    
+
   }
   void BackgroundWorker(){
-    if(!socket.Connected)
-     return;
-
-    byte[] streamBuffer = new byte[8000];
-    byte[] outputBuffer = new byte[8000];
-
-    while(true){
-      if(socket.Available > 0){
-        System.Console.WriteLine("Slave have a request");
-        int bufferLength = socket.GetStream().Read(streamBuffer);
-        if(bufferLength <= 0)
-          continue;
-
-        //- Get the function name. using a byte array.
-        ushort type       = streamBuffer[0];
-        ushort functionId = streamBuffer[1];
-
-        //- Types of messages.
-        const ushort MASTER = 255;
-        const ushort SLAVE  = 125;
-
-        //- WE NEED TO DO SOMETHING ELSE HERE.
-      } else Thread.Sleep(250);
-    }
+    
   }
+
+  void FlushTrace(LogTrace logTrace){
+
+
+
+
+
+  }
+
+
 
   List<IMsg> newSubscribers;
   List<IMsg> msgsSubs;
-  TcpClient socket;
-  Thread thread;
+  readonly TcpClient socket;
+  readonly Thread thread;
 
+  LogTrace logTraceInformation {get; set;}
+
+  const int GlobalSize = 55;
+
+  char[]? ConvertToFixedArray(string functionName)
+  {
+
+    if(functionName.Length > GlobalSize)
+      return null;
+    char[] outputBuffer = new char[GlobalSize];
+
+    for (int i = 0; i < functionName.Length; i++)
+    {
+      outputBuffer[i] = functionName[i];
+    }
+    for (int i = functionName.Length; i < GlobalSize; i++)
+    { //simple padding
+      outputBuffer[i] = '\n';
+    }
+    return outputBuffer;
+  }
+  byte[]? Convert(char[] input){
+    if(input == null)
+      return null;
+    return Encoding.Unicode.GetBytes(input);
+  }
 }

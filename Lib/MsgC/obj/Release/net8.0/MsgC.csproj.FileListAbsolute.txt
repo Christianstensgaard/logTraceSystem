@@ -1,0 +1,11 @@
+C:\git\logTraceSystem\Lib\MsgC\bin\Release\net8.0\MsgC.deps.json
+C:\git\logTraceSystem\Lib\MsgC\bin\Release\net8.0\MsgC.dll
+C:\git\logTraceSystem\Lib\MsgC\bin\Release\net8.0\MsgC.pdb
+C:\git\logTraceSystem\Lib\MsgC\obj\Release\net8.0\MsgC.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\logTraceSystem\Lib\MsgC\obj\Release\net8.0\MsgC.AssemblyInfoInputs.cache
+C:\git\logTraceSystem\Lib\MsgC\obj\Release\net8.0\MsgC.AssemblyInfo.cs
+C:\git\logTraceSystem\Lib\MsgC\obj\Release\net8.0\MsgC.csproj.CoreCompileInputs.cache
+C:\git\logTraceSystem\Lib\MsgC\obj\Release\net8.0\MsgC.dll
+C:\git\logTraceSystem\Lib\MsgC\obj\Release\net8.0\refint\MsgC.dll
+C:\git\logTraceSystem\Lib\MsgC\obj\Release\net8.0\MsgC.pdb
+C:\git\logTraceSystem\Lib\MsgC\obj\Release\net8.0\ref\MsgC.dll
