@@ -1,4 +1,4 @@
-# UPDATES:
+# UPDATES: < 09-10-2024 >
 
 ## StreamWriter.cs & StreamReader.cs has been created:
   - Added a Stream reader & writer to the libary, to make reading and writing more easy for the user.
