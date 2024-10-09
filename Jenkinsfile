@@ -1,18 +1,15 @@
-pipeline{
-  agent any
-  trigger{
-    pollSCM("* * * * *")
-    git(poll: true, url: '')
-  }
+pipeline {
+    agent any
 
-  stages{
-      stage("Build"){
-        steps{
-            step{
-              echo(message: 'hello World')
+    triggers {
+        pollSCM('* * * * *')  // Triggers the pipeline based on SCM polling
+    }
+
+    stages {
+        stage("Build") {
+            steps {
+                echo 'Hello World'  // Directly place echo command inside steps
             }
         }
-
-      }
-  }
+    }
 }
