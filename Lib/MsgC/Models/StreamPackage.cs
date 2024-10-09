@@ -8,6 +8,8 @@ public class StreamPackage
     public byte? RequestType { get; set; } = 0xEE;
     public byte[]? payload { get; set; } = null;
 
+    public byte[]? Raw { get; set; }
+
 
     public const byte NewConnection = 0x00;
     public const byte SLAVE = 0xEF;

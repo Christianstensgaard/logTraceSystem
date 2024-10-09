@@ -56,7 +56,26 @@ void HandleNewConnection(StreamPackage package, ClientConnection clientInformati
 }
 
 void HandleSlaveConnection(StreamPackage package, ClientConnection clientConnection){
-  //- Handle request for a Slave connection.
+  if(clientConnection == null || !clientConnection.Socket.Connected)
+    return;
+  if(package == null || package.functionName == null)
+    return;
+
+  foreach (var Slave in connections)
+  {
+    if(Slave.FunctionName == package.functionName){
+      if(package.Raw != null)
+      {
+        Slave.Stream.Write(package.Raw);
+        Slave.Stream.Flush();
+        break;
+      }
+
+      Slave.Stream.Write(StreamConverter.PackStream(package));
+      Slave.Stream.Flush();
+      break;
+    }
+  }
 }
 
 void HandleMasterConneciton(StreamPackage package, ClientConnection clientInformation){

@@ -4,9 +4,9 @@ using TraceSystem.Models;
 using TraceSystem.Controllers;
 
 namespace TraceSystem.Controllers;
-public class TraceController : IDisposable{
+public class TraceContext : IDisposable{
 
-    public TraceController(){
+    public TraceContext(){
         db = new DatabaseConnection();
     }
 
