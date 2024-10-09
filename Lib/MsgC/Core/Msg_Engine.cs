@@ -1,5 +1,6 @@
 ﻿using System.Net.Sockets;
-using System.Text;
+using MsgC.Interfaces;
+using MsgC.Models;
 
 namespace MsgC;
 public class Msg_Engine{
@@ -52,20 +53,24 @@ public class Msg_Engine{
   }
   LogTraceMsgConnectionInformation? logTraceInfoconnectionInformation = null;
 
-
   public bool EnableTracing { get; set; } = false;
   public bool EnableLogging { get; set; } = false;
 
   public void Add(IMsg msg){
     //Subscribing to the Server.
     if(!socket.Connected)
-      return;
+    {
+      // - Try to Connect to the master server again.
+      Start();
 
+      if(!socket.Connected){
+        //- Log this to something local. and push it then connection is open.
+      }
+    }
 
-    //- Subscribe to the client.
-    byte[]? stream = Convert(ConvertToFixedArray(msg.FunctionName));
+    System.Console.WriteLine("Subscribing: " + msg.FunctionName);
+    byte[]? stream = null;
     
-
     if(stream == null)
       return;
     socket.GetStream().Write(stream);
@@ -77,11 +82,12 @@ public class Msg_Engine{
   internal void Write(IMsg callerInformation){
     System.Console.WriteLine("Writing To MessageServer");
 
-    logTraceInformation ??= new LogTrace();
-    logTraceInformation.TraceID = null;
-    logTraceInformation.FunctionName = callerInformation.FunctionName;
-
-
+    //- Create a new Trace Log ID
+    if(logTraceInformation == null){
+      logTraceInformation = new LogTrace();
+      logTraceInformation.TraceID = CreateTraceId(callerInformation);
+      logTraceInformation.CallStack.AddLast(CreateTraceCallerID(callerInformation));
+    } else logTraceInformation.CallStack.AddLast(CreateTraceCallerID(callerInformation));
 
     socket.GetStream();
     //- Pack the Data into a package. 
@@ -94,14 +100,19 @@ public class Msg_Engine{
     
   }
 
-  void FlushTrace(LogTrace logTrace){
-
-
-
-
-
+  byte[] CreateTraceId(IMsg caller){
+    //Creating a TraceID
+    return new byte[255];
   }
 
+  byte[] CreateTraceCallerID(IMsg caller){
+    // creating traceCaller ID.
+    return new byte[255];
+  }
+
+  byte[] CreateLog(){
+    return new byte[255];
+  }
 
 
   List<IMsg> newSubscribers;
@@ -112,27 +123,4 @@ public class Msg_Engine{
   LogTrace logTraceInformation {get; set;}
 
   const int GlobalSize = 55;
-
-  char[]? ConvertToFixedArray(string functionName)
-  {
-
-    if(functionName.Length > GlobalSize)
-      return null;
-    char[] outputBuffer = new char[GlobalSize];
-
-    for (int i = 0; i < functionName.Length; i++)
-    {
-      outputBuffer[i] = functionName[i];
-    }
-    for (int i = functionName.Length; i < GlobalSize; i++)
-    { //simple padding
-      outputBuffer[i] = '\n';
-    }
-    return outputBuffer;
-  }
-  byte[]? Convert(char[] input){
-    if(input == null)
-      return null;
-    return Encoding.Unicode.GetBytes(input);
-  }
 }

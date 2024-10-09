@@ -9,7 +9,7 @@ Msg_Engine.I.EnableTracing = true;
 master.OnReturnRequest += returnRequest;
 
 while(true){
-  master.Invoke("insertTrace");
+  master.Invoke("createTrace");
 }
 
 

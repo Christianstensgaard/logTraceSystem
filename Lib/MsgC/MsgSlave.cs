@@ -1,3 +1,5 @@
+using MsgC.Interfaces;
+
 namespace MsgC;
 public class MsgSlave : IDisposable, IMsg{
   public string FunctionName { get; set; } = string.Empty;

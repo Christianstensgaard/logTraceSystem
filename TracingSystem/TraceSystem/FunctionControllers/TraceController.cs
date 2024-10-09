@@ -16,7 +16,10 @@ public class TraceController{
 
 
   void OnRequest(){
+    System.Console.WriteLine("On Request!");
+
     
+
 
 
     

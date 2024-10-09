@@ -1,3 +1,5 @@
+using MsgC.Interfaces;
+
 namespace MsgC;
 public class MsgMaster : IMsg
 {
@@ -11,8 +13,7 @@ public class MsgMaster : IMsg
     public string FunctionName {get;set;}
     public ushort FunctionId {get;set;}
     public ushort Type {get;set;}
-    public byte TraceID { get; set; }
-
+    public byte TraceCallerID { get; set; }
     public byte[] StreamBuffer {get; protected set;}
     
 
@@ -27,7 +28,7 @@ public class MsgMaster : IMsg
     }
 
 
-    public void Log(string desciption){
+    public void Log(LogModel log){
       //- Log this to the logging system. 
     }
 
@@ -66,4 +67,14 @@ public class MsgMaster : IMsg
     int allocationIndex;
     int bufferIndex;
     int[,] bufferAllocation;
+}
+
+public class LogModel
+{
+  public string Description { get; set; } = "";
+
+
+
+
+
 }

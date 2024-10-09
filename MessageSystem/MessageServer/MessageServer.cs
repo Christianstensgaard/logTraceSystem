@@ -1,6 +1,7 @@
 ﻿using System.Net;
 using System.Net.Sockets;
-using MsgC;
+using MsgC.Models;
+using MsgC.Tools;
 
 System.Console.WriteLine("Starting Server!");
 TcpListener serverSocket = new TcpListener(IPAddress.Any, 20200);
@@ -18,15 +19,13 @@ while(true){
 
 void BackgroundWorker(){
   byte[] buffer = new byte[8000];
-
-
   if(connections.Count > 0)
     foreach (var connection in connections)
     {
       if(!connection.Socket.Connected || connection.Socket.Available <= 0)
         continue;
 
-      //- We have some data in the network stream buffer. 
+      //- We have some data in the network stream buffer.
       int size = connection.Stream.Read(buffer);
       StreamPackage streamPackage = StreamConverter.UnPackStream(buffer, size);
 
@@ -53,15 +52,20 @@ void BackgroundWorker(){
 }
 
 void HandleNewConnection(StreamPackage package, ClientConnection clientInformation){
-
+  //Setup New Subscription for the message server
 }
 
 void HandleSlaveConnection(StreamPackage package, ClientConnection clientConnection){
-
+  //- Handle request for a Slave connection.
 }
 
 void HandleMasterConneciton(StreamPackage package, ClientConnection clientInformation){
+  //- Handle Master request.
 
+  //- Who do we need to call.
+
+
+  //- Find the client, who has the right. 
 }
 
 
@@ -74,5 +78,4 @@ class ClientConnection{
   public int ID { get; set; } = -1;
   public NetworkStream Stream { get; set; }
   public TcpClient Socket { get; set; }
-
 }
