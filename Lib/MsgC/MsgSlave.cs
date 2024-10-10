@@ -25,22 +25,18 @@ public class MsgSlave : IDisposable, IMsg{
   {
     Msg_Engine.I.Remove(this);
   }
-
   public void CallEvent()
   {
       OnRequest?.Invoke();
   }
-
   public enum LoggingTypes{
     Debug,
     Warning,
     Error
   }
-
   public void Log(string desciption, LoggingTypes type ){
       //- Log something
   }
-
   public void WriteToClass(byte[] data, int size)
   {
       //- Write to the class in the background.

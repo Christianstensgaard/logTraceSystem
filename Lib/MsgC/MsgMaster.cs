@@ -15,7 +15,6 @@ public class MsgMaster : IMsg
     public ushort Type {get;set;}
     public byte TraceCallerID { get; set; }
     public byte[] StreamBuffer {get; protected set;}
-    
 
     public delegate void requestReturn(int id);
     public event requestReturn OnReturnRequest;
@@ -26,12 +25,9 @@ public class MsgMaster : IMsg
       Msg_Engine.I.Write(this);
       return allocationIndex++;
     }
-
-
     public void Log(LogModel log){
       //- Log this to the logging system. 
     }
-
 
 
     public byte[]? GetRequest(int invokeId){
@@ -49,7 +45,6 @@ public class MsgMaster : IMsg
       Array.Copy(StreamBuffer, start, buffer, 0, buffersize);
       return buffer;
     }
-
     public void CallEvent()
     {
         OnReturnRequest?.Invoke(id);

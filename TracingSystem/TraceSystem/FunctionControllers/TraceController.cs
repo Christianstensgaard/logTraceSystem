@@ -8,6 +8,8 @@ public class TraceController{
     Msg_Engine.I.EnableLogging = true;
     Msg_Engine.I.EnableTracing = true;
 
+
+
     connection = new MsgSlave("createTrace", 4000);
     connection.OnRequest += OnRequest;
     connection.Log("Created Slave", MsgSlave.LoggingTypes.Debug);
