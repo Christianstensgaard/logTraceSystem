@@ -9,7 +9,7 @@ RUN apt-get update && \
     rm packages-microsoft-prod.deb
 
 RUN apt-get update && \
-    apt-get install -y dotnet-sdk-6.0  # You can specify any .NET version, for example 6.0 or 7.0
+    apt-get install -y dotnet-sdk-8.0  
 
 USER jenkins
 
