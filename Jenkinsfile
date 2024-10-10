@@ -2,18 +2,15 @@ pipeline {
     agent any
 
     triggers {
-        pollSCM('* * * * *')  // Triggers the pipeline based on SCM polling
+        pollSCM('* * * * *')
     }
 
     stages {
         stage("Build") {
             steps {
-                echo 'Hello World'  // Directly place echo command inside steps
-
-
-                echo 'Building dependensies'
-                cd 'ls'
-            }
+                echo 'Hello World'
+                echo 'Building dependencies'
+                sh 'ls'
         }
     }
 }
