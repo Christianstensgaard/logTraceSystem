@@ -11,6 +11,7 @@ pipeline {
                 echo 'Hello World'
                 echo 'Building dependencies'
                 sh 'ls'
+            }
         }
     }
 }
