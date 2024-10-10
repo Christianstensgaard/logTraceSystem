@@ -9,6 +9,10 @@ pipeline {
         stage("Build") {
             steps {
                 echo 'Hello World'  // Directly place echo command inside steps
+
+
+                echo 'Building dependensies'
+                cd ls
             }
         }
     }
