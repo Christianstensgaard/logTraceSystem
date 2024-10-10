@@ -20,9 +20,6 @@ pipeline {
 
                 echo 'Checking some git stuff'
                 sh 'git status'
-
-
-
             }
         }
     }
