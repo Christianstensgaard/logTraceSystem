@@ -12,7 +12,7 @@ pipeline {
 
 
                 echo 'Building dependensies'
-                cd ls
+                cd 'ls'
             }
         }
     }
