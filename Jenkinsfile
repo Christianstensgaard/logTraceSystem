@@ -8,19 +8,29 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-                echo 'Hello World'
-                echo 'Building dependencies'
+                echo 'Building solution'
 
-                //Building externals libiays
                 echo 'Starting Build MsgC'
+                echo 'Starting the build of MonitoringAPI'
+
                 sh 'dotnet publish -c Release -o ./out'
                 sh 'cd ../../'
-                //Building Monitoring System
-                echo 'Starting the build of MonitoringAPI'
 
                 echo 'Checking some git stuff'
                 sh 'git status'
             }
+        }
+        stage("Test"){
+            steps{
+                echo 'doing some test'
+            }
+
+
+        stage("Deploy"){
+            steps{
+                echo 'deplaying to Target: xxxxxxxxxx'
+            }
+        }
         }
     }
 }
