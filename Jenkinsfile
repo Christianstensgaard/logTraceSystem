@@ -14,10 +14,6 @@ pipeline {
                 echo 'Starting the build of MonitoringAPI'
 
                 sh 'dotnet publish -c Release -o ./out'
-                sh 'cd ../../'
-
-                echo 'Checking some git stuff'
-                sh 'git status'
             }
         }
         stage("Test") {
