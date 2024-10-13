@@ -20,17 +20,16 @@ pipeline {
                 sh 'git status'
             }
         }
-        stage("Test"){
+        stage("Test") {
             steps{
                 echo 'doing some test'
             }
+        }
 
-
-        stage("Deploy"){
+        stage("Deploy") {
             steps{
                 echo 'deplaying to Target: xxxxxxxxxx'
             }
-        }
         }
     }
 }
