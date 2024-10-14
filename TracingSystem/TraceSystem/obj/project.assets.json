@@ -1628,11 +1628,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\logTraceSystem\\TracingSystem\\TraceSystem\\TraceSystem.csproj",
+      "projectUniqueName": "C:\\git\\Assignment_logTraceSystem\\TracingSystem\\TraceSystem\\TraceSystem.csproj",
       "projectName": "TraceSystem",
-      "projectPath": "C:\\git\\logTraceSystem\\TracingSystem\\TraceSystem\\TraceSystem.csproj",
+      "projectPath": "C:\\git\\Assignment_logTraceSystem\\TracingSystem\\TraceSystem\\TraceSystem.csproj",
       "packagesPath": "C:\\Users\\Chalo\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\logTraceSystem\\TracingSystem\\TraceSystem\\obj\\",
+      "outputPath": "C:\\git\\Assignment_logTraceSystem\\TracingSystem\\TraceSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Chalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1650,8 +1650,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\git\\logTraceSystem\\Lib\\MsgC\\MsgC.csproj": {
-              "projectPath": "C:\\git\\logTraceSystem\\Lib\\MsgC\\MsgC.csproj"
+            "C:\\git\\Assignment_logTraceSystem\\Lib\\MsgC\\MsgC.csproj": {
+              "projectPath": "C:\\git\\Assignment_logTraceSystem\\Lib\\MsgC\\MsgC.csproj"
             }
           }
         }

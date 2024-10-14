@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\logTraceSystem\\MonitoringSystem\\MonitoringAPI\\MonitoringAPI.csproj",
+      "projectUniqueName": "C:\\git\\Assignment_logTraceSystem\\MonitoringSystem\\MonitoringAPI\\MonitoringAPI.csproj",
       "projectName": "MonitoringAPI",
-      "projectPath": "C:\\git\\logTraceSystem\\MonitoringSystem\\MonitoringAPI\\MonitoringAPI.csproj",
+      "projectPath": "C:\\git\\Assignment_logTraceSystem\\MonitoringSystem\\MonitoringAPI\\MonitoringAPI.csproj",
       "packagesPath": "C:\\Users\\Chalo\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\logTraceSystem\\MonitoringSystem\\MonitoringAPI\\obj\\",
+      "outputPath": "C:\\git\\Assignment_logTraceSystem\\MonitoringSystem\\MonitoringAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Chalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,8 +54,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\git\\logTraceSystem\\Lib\\MsgC\\MsgC.csproj": {
-              "projectPath": "C:\\git\\logTraceSystem\\Lib\\MsgC\\MsgC.csproj"
+            "C:\\git\\Assignment_logTraceSystem\\Lib\\MsgC\\MsgC.csproj": {
+              "projectPath": "C:\\git\\Assignment_logTraceSystem\\Lib\\MsgC\\MsgC.csproj"
             }
           }
         }

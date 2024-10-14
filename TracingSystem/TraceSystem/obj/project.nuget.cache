@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ywdzNwzul/g=",
+  "dgSpecHash": "8Tg0L/tKCvA=",
   "success": true,
-  "projectFilePath": "C:\\git\\logTraceSystem\\TracingSystem\\TraceSystem\\TraceSystem.csproj",
+  "projectFilePath": "C:\\git\\Assignment_logTraceSystem\\TracingSystem\\TraceSystem\\TraceSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Chalo\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Chalo\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",

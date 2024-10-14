@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\logTraceSystem\\Lib\\MsgC\\MsgC.csproj",
+      "projectUniqueName": "C:\\git\\Assignment_logTraceSystem\\Lib\\MsgC\\MsgC.csproj",
       "projectName": "MsgC",
-      "projectPath": "C:\\git\\logTraceSystem\\Lib\\MsgC\\MsgC.csproj",
+      "projectPath": "C:\\git\\Assignment_logTraceSystem\\Lib\\MsgC\\MsgC.csproj",
       "packagesPath": "C:\\Users\\Chalo\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\logTraceSystem\\Lib\\MsgC\\obj\\",
+      "outputPath": "C:\\git\\Assignment_logTraceSystem\\Lib\\MsgC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Chalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
