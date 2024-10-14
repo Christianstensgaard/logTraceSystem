@@ -17,10 +17,10 @@ public class TraceController{
     System.Console.WriteLine("On Request!");
 
     using MsgC.Tools.StreamReader reader = new MsgC.Tools.StreamReader(connection.StreamBuffer); // <--- Stream buffer is the raw input, should be changed to only habdle the payload.
-      int? traceID      = reader.GetInt();
-      string? startTime = reader.GetString();
-      string? endTime   = reader.GetString();
-      string? status    = reader.GetString();
+    int? traceID      = reader.GetInt();
+    string? startTime = reader.GetString();
+    string? endTime   = reader.GetString();
+    string? status    = reader.GetString();
 
     if(traceID == null || startTime == null || endTime == null || status == null){
       connection.Log("Error parsing MessageStream", MsgSlave.LoggingTypes.Error);
