@@ -1,3 +1,0 @@
-C:\git\logTraceSystem\Lib\MsgC\out\MsgC.dll
-C:\git\logTraceSystem\Lib\MsgC\out\MsgC.deps.json
-C:\git\logTraceSystem\Lib\MsgC\out\MsgC.pdb
