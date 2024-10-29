@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\MessageServerClient\\lib\\BitToolbox\\BitToolbox.csproj": {}
+    "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\BitToolbox.csproj": {}
   },
   "projects": {
-    "C:\\git\\MessageServerClient\\lib\\BitToolbox\\BitToolbox.csproj": {
+    "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\BitToolbox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\MessageServerClient\\lib\\BitToolbox\\BitToolbox.csproj",
+        "projectUniqueName": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\BitToolbox.csproj",
         "projectName": "BitToolbox",
-        "projectPath": "C:\\git\\MessageServerClient\\lib\\BitToolbox\\BitToolbox.csproj",
+        "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\BitToolbox.csproj",
         "packagesPath": "C:\\Users\\Chalo\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\MessageServerClient\\lib\\BitToolbox\\obj\\",
+        "outputPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Chalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
