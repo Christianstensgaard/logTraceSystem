@@ -9,16 +9,21 @@ public class ByteBufferController{
 
   public ByteArray[] Convert(NetworkStream stream){
     List<ByteArray> byteArrays = new List<ByteArray>();
-    ByteArray buffer = Allocate(500);
-    int size = stream.Read(buffer.Stream, buffer.Start, 500);
-    int position = 0;
-    while(position + sizeof(Int32) <= size){
-      int psize = BitConverter.ToInt32(globalBuffer, position);
-      int start = position + sizeof(Int32);
-      position += sizeof(Int32);
-      position += psize;
-      byteArrays.Add(new ByteArray(globalBuffer, start, psize + start));
+    ByteArray buffer = Allocate(3000);
+    int dataSize = stream.Read(buffer.Stream, buffer.Start, 3000);
+    int i = buffer.Start;
+    int packageSize = -1;
+
+    while(dataSize+buffer.Start > i){
+      packageSize = BitConverter.ToInt32(globalBuffer, i);
+
+      if(packageSize <= 0)
+        return byteArrays.ToArray(); //- Maybe add some error?
+
+      byteArrays.Add(new ByteArray(globalBuffer, i, packageSize + sizeof(Int32)+i));
+      i += packageSize + sizeof(Int32);
     }
+
     return byteArrays.ToArray();
   }
 
@@ -42,6 +47,8 @@ public class ByteBufferController{
   }
 
   public ByteArray Allocate(byte[] stream){
+    if(stream.Length > BufferSize)
+      return new ByteArray([], -1, -1);
     int size = stream.Length;
     Check(size);
     int start = ScalePosition(size);

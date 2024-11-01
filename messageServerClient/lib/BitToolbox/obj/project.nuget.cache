@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RNzcP6Ps8G0=",
+  "dgSpecHash": "QMRKPBZYPsI=",
   "success": true,
-  "projectFilePath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\BitToolbox.csproj",
+  "projectFilePath": "c:\\git\\MessageServerClient\\lib\\BitToolbox\\BitToolbox.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

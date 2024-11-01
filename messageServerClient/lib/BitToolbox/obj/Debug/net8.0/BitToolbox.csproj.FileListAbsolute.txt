@@ -21,3 +21,4 @@ c:\git\MessageServerClient\lib\BitToolbox\obj\Debug\net8.0\BitToolbox.dll
 c:\git\MessageServerClient\lib\BitToolbox\obj\Debug\net8.0\refint\BitToolbox.dll
 c:\git\MessageServerClient\lib\BitToolbox\obj\Debug\net8.0\BitToolbox.pdb
 c:\git\MessageServerClient\lib\BitToolbox\obj\Debug\net8.0\ref\BitToolbox.dll
+C:\git\MessageServerClient\lib\BitToolbox\obj\Debug\net8.0\BitToolbox.sourcelink.json

@@ -6,7 +6,7 @@ public class ServiceController{
     bufferController = new ByteBufferController();
     connections = new List<SlaveConnection>();
   }
-  
+
   public void NewConnection(TcpClient socket){
       connections.Add(new SlaveConnection(){
         Socket = socket
@@ -14,7 +14,7 @@ public class ServiceController{
   }
 
 
-  
+
 
 
 
