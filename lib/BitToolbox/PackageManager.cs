@@ -22,9 +22,7 @@ public class PackageManager{
   public static byte[] Unpack(ByteArray byteArray){
     int packageSize = BitConverter.ToInt32(byteArray.Stream, byteArray.Start);
     byte[] package = new byte[packageSize];
-    System.Console.WriteLine(packageSize);
-    Array.Copy(byteArray.Stream, sizeof(Int32), package, 0, packageSize);
-
+    Array.Copy(byteArray.Stream, byteArray.Start + sizeof(Int32), package, 0, packageSize );
     return package;
   }
 
