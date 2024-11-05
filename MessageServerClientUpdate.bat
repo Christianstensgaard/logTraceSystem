@@ -1,7 +1,7 @@
 @echo off
 set REPO_URL=https://github.com/Christianstensgaard/MessageServerClient.git
 set SUBTREE_PREFIX=messageServerClient
-set TARGET_BRANCH=PackageSystem
+set TARGET_BRANCH=packageBuilder
 
 git --version >nul 2>&1
 if %ERRORLEVEL% NEQ 0 (
