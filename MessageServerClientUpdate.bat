@@ -1,8 +1,11 @@
 @echo off
-set REPO_URL=https://github.com/Christianstensgaard/MessageServerClient.git
-set SUBTREE_PREFIX=messageServerClient
-set TARGET_BRANCH=packageBuilder
+setlocal enabledelayedexpansion
 
+set REPO_URL=https://github.com/Christianstensgaard/MessageServerClient.git
+set SUBTREE_PREFIX=MessageServerClient
+set TARGET_BRANCH=master
+
+:: Check if Git is installed
 git --version >nul 2>&1
 if %ERRORLEVEL% NEQ 0 (
     echo "Git is not installed. Please install Git to continue."
@@ -11,23 +14,43 @@ if %ERRORLEVEL% NEQ 0 (
 
 cd /d %~dp0
 
-echo Checking if messageServerClient subtree exists...
+:: Remove the subtree if it already exists
+echo Checking if %SUBTREE_PREFIX% subtree exists...
 git ls-tree -d HEAD %SUBTREE_PREFIX% >nul 2>&1
-if %ERRORLEVEL% NEQ 0 (
-    echo "messageServerClient subtree not found. Adding subtree..."
-    git subtree add --prefix=%SUBTREE_PREFIX% %REPO_URL% %TARGET_BRANCH% --squash
+if %ERRORLEVEL% EQU 0 (
+    echo "Existing %SUBTREE_PREFIX% subtree found. Removing..."
+    git rm -rf %SUBTREE_PREFIX%
     if %ERRORLEVEL% EQU 0 (
-        echo "messageServerClient subtree has been successfully added."
+        echo "Successfully staged %SUBTREE_PREFIX% subtree for removal."
     ) else (
-        echo "Failed to add messageServerClient. Please check the repository URL and try again."
+        echo "Failed to remove %SUBTREE_PREFIX%. Exiting."
         exit /b 1
     )
-) else (
-    echo "messageServerClient subtree found. Updating..."
-    git subtree pull --prefix=%SUBTREE_PREFIX% %REPO_URL% %TARGET_BRANCH% --squash
-    if %ERRORLEVEL% EQU 0 (
-        echo "messageServerClient has been successfully updated."
-    ) else (
-        echo "Failed to update messageServerClient. Please check the repository URL and try again."
+
+    git commit -m "Remove existing %SUBTREE_PREFIX% subtree" >nul 2>&1
+    if %ERRORLEVEL% NEQ 0 (
+        echo "No changes to commit, skipping commit step."
     )
 )
+
+:: Clean up any lingering files in the directory
+if exist %SUBTREE_PREFIX% (
+    echo "Cleaning up remaining files in %SUBTREE_PREFIX% directory..."
+    rmdir /s /q %SUBTREE_PREFIX%
+    if exist %SUBTREE_PREFIX% (
+        echo "Failed to delete %SUBTREE_PREFIX% directory. Exiting."
+        exit /b 1
+    )
+)
+
+:: Add the subtree afresh
+echo Adding %SUBTREE_PREFIX% subtree...
+git subtree add --prefix=%SUBTREE_PREFIX% %REPO_URL% %TARGET_BRANCH% --squash
+if %ERRORLEVEL% EQU 0 (
+    echo "%SUBTREE_PREFIX% subtree has been successfully added."
+) else (
+    echo "Failed to add %SUBTREE_PREFIX%. Please check the repository URL and try again."
+    exit /b 1
+)
+
+endlocal
