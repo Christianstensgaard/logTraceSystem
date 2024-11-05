@@ -1,0 +1,12 @@
+c:\git\MessageServerClient\lib\MsPipeline\bin\Debug\net8.0\MsPipeline.deps.json
+c:\git\MessageServerClient\lib\MsPipeline\bin\Debug\net8.0\MsPipeline.dll
+c:\git\MessageServerClient\lib\MsPipeline\bin\Debug\net8.0\MsPipeline.pdb
+c:\git\MessageServerClient\lib\MsPipeline\obj\Debug\net8.0\MsPipeline.GeneratedMSBuildEditorConfig.editorconfig
+c:\git\MessageServerClient\lib\MsPipeline\obj\Debug\net8.0\MsPipeline.AssemblyInfoInputs.cache
+c:\git\MessageServerClient\lib\MsPipeline\obj\Debug\net8.0\MsPipeline.AssemblyInfo.cs
+c:\git\MessageServerClient\lib\MsPipeline\obj\Debug\net8.0\MsPipeline.csproj.CoreCompileInputs.cache
+c:\git\MessageServerClient\lib\MsPipeline\obj\Debug\net8.0\MsPipeline.sourcelink.json
+c:\git\MessageServerClient\lib\MsPipeline\obj\Debug\net8.0\MsPipeline.dll
+c:\git\MessageServerClient\lib\MsPipeline\obj\Debug\net8.0\refint\MsPipeline.dll
+c:\git\MessageServerClient\lib\MsPipeline\obj\Debug\net8.0\MsPipeline.pdb
+c:\git\MessageServerClient\lib\MsPipeline\obj\Debug\net8.0\ref\MsPipeline.dll
