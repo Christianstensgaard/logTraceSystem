@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\MessageServerClient\\lib\\Terminal\\Terminal.csproj": {}
+    "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\Terminal\\Terminal.csproj": {}
   },
   "projects": {
-    "C:\\git\\MessageServerClient\\lib\\Terminal\\Terminal.csproj": {
+    "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\Terminal\\Terminal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\MessageServerClient\\lib\\Terminal\\Terminal.csproj",
+        "projectUniqueName": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\Terminal\\Terminal.csproj",
         "projectName": "Terminal",
-        "projectPath": "C:\\git\\MessageServerClient\\lib\\Terminal\\Terminal.csproj",
+        "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\Terminal\\Terminal.csproj",
         "packagesPath": "C:\\Users\\Chalo\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\MessageServerClient\\lib\\Terminal\\obj\\",
+        "outputPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\Terminal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Chalo\\AppData\\Roaming\\NuGet\\NuGet.Config",

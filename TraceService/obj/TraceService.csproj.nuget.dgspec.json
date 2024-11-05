@@ -4,6 +4,260 @@
     "C:\\git\\Assignment_logTraceSystem\\TraceService\\TraceService.csproj": {}
   },
   "projects": {
+    "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\BitToolbox.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\BitToolbox.csproj",
+        "projectName": "BitToolbox",
+        "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\BitToolbox.csproj",
+        "packagesPath": "C:\\Users\\Chalo\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Chalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\MsPipeline\\MsPipeline.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\MsPipeline\\MsPipeline.csproj",
+        "projectName": "MsPipeline",
+        "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\MsPipeline\\MsPipeline.csproj",
+        "packagesPath": "C:\\Users\\Chalo\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\MsPipeline\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Chalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\Terminal\\Terminal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\Terminal\\Terminal.csproj",
+        "projectName": "Terminal",
+        "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\Terminal\\Terminal.csproj",
+        "packagesPath": "C:\\Users\\Chalo\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\Terminal\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Chalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\Service\\Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\Service\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\Chalo\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Chalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\BitToolbox.csproj": {
+                "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\BitToolbox.csproj"
+              },
+              "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\MsPipeline\\MsPipeline.csproj": {
+                "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\MsPipeline\\MsPipeline.csproj"
+              },
+              "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\Terminal\\Terminal.csproj": {
+                "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\Terminal\\Terminal.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\git\\Assignment_logTraceSystem\\TraceService\\TraceService.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -28,7 +282,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\Service\\Service.csproj": {
+                "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\Service\\Service.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -64,11 +64,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\MessageServerClient\\Service\\Service.csproj",
+      "projectUniqueName": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "C:\\git\\MessageServerClient\\Service\\Service.csproj",
+      "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\Service\\Service.csproj",
       "packagesPath": "C:\\Users\\Chalo\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\MessageServerClient\\Service\\obj\\",
+      "outputPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Chalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -86,14 +86,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\git\\MessageServerClient\\lib\\BitToolbox\\BitToolbox.csproj": {
-              "projectPath": "c:\\git\\MessageServerClient\\lib\\BitToolbox\\BitToolbox.csproj"
+            "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\BitToolbox.csproj": {
+              "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\BitToolbox\\BitToolbox.csproj"
             },
-            "C:\\git\\MessageServerClient\\lib\\MsPipeline\\MsPipeline.csproj": {
-              "projectPath": "C:\\git\\MessageServerClient\\lib\\MsPipeline\\MsPipeline.csproj"
+            "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\MsPipeline\\MsPipeline.csproj": {
+              "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\MsPipeline\\MsPipeline.csproj"
             },
-            "C:\\git\\MessageServerClient\\lib\\Terminal\\Terminal.csproj": {
-              "projectPath": "C:\\git\\MessageServerClient\\lib\\Terminal\\Terminal.csproj"
+            "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\Terminal\\Terminal.csproj": {
+              "projectPath": "C:\\git\\Assignment_logTraceSystem\\messageServerClient\\lib\\Terminal\\Terminal.csproj"
             }
           }
         }
