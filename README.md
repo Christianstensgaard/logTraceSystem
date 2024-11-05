@@ -1,15 +1,13 @@
 # Global Project Information
 > [!WARNING]
 > Project is still under contruction, and therefore alot of the elements are for demo view only and do not work
-
+> Current the Server are not working due to a major internal change.
 
 
 # UPDATES: <11-10-2024>
   ## Patch note
   ### Redesign of the msg engine
-  - right now the engine, has been alright. but after working around. a redesign on the message engine, is needed to make it more simple for the future.
-
-  - the Slave and Master: both classes will be redesigned to create a more simple interface for the user
+  - 
 
 
 # UPDATES: < 09-10-2024 >
