@@ -32,7 +32,7 @@ public class UpdateTrace : TaskService
       //- ServiceEngine.I Will be removed, And wrapped inside the TaskService class
       
       if(trace.ID == 0)
-        ServiceEngine.I.CallBackRequest(0xf4, "Logger", "UpdateError", [0xff], ()=>{
+        ServiceEngine.I.CallBackRequest(0xf4, "Logger", "Error", [0xff], ()=>{
             //- Response from the service
 
             return true;
