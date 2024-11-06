@@ -3,6 +3,8 @@ using Service;
 using Service.Core;
 using TraceService.Services;
 
+
+//- Fast Task Creation
 TaskBuilder.CreateTask("CreateTrace", new Trace(), ()=>{
 
 
@@ -11,7 +13,7 @@ TaskBuilder.CreateTask("CreateTrace", new Trace(), ()=>{
   return true;
 } );
 
-
+// - DEMO TASK SERVICE
 public class UpdateTrace : TaskService
 {
     public UpdateTrace(string taskName) : base("Update Task")
@@ -30,7 +32,6 @@ public class UpdateTrace : TaskService
     {
        Trace trace = new Trace();
        UnPackStream(trace);
-
 
 
       //- ServiceEngine.I Will be removed, And wrapped inside the TaskService class
