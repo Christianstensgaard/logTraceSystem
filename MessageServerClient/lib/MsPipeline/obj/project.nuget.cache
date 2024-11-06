@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yiLMgaK59Dg=",
+  "dgSpecHash": "sFNJguTXnIY=",
   "success": true,
-  "projectFilePath": "C:\\git\\MessageServerClient\\lib\\MsPipeline\\MsPipeline.csproj",
+  "projectFilePath": "C:\\git\\logTraceSystem\\MessageServerClient\\lib\\MsPipeline\\MsPipeline.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

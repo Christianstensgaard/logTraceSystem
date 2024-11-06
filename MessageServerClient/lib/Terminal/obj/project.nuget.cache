@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RrLLOn1uMQY=",
+  "dgSpecHash": "LAxQ0EjdfsI=",
   "success": true,
-  "projectFilePath": "C:\\git\\MessageServerClient\\lib\\Terminal\\Terminal.csproj",
+  "projectFilePath": "C:\\git\\logTraceSystem\\MessageServerClient\\lib\\Terminal\\Terminal.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

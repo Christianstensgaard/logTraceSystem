@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\MessageServerClient\\lib\\MsPipeline\\MsPipeline.csproj": {}
+    "C:\\git\\logTraceSystem\\MessageServerClient\\lib\\MsPipeline\\MsPipeline.csproj": {}
   },
   "projects": {
-    "C:\\git\\MessageServerClient\\lib\\MsPipeline\\MsPipeline.csproj": {
+    "C:\\git\\logTraceSystem\\MessageServerClient\\lib\\MsPipeline\\MsPipeline.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\MessageServerClient\\lib\\MsPipeline\\MsPipeline.csproj",
+        "projectUniqueName": "C:\\git\\logTraceSystem\\MessageServerClient\\lib\\MsPipeline\\MsPipeline.csproj",
         "projectName": "MsPipeline",
-        "projectPath": "C:\\git\\MessageServerClient\\lib\\MsPipeline\\MsPipeline.csproj",
+        "projectPath": "C:\\git\\logTraceSystem\\MessageServerClient\\lib\\MsPipeline\\MsPipeline.csproj",
         "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\MessageServerClient\\lib\\MsPipeline\\obj\\",
+        "outputPath": "C:\\git\\logTraceSystem\\MessageServerClient\\lib\\MsPipeline\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
